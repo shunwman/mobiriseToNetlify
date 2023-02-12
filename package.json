@@ -1,0 +1,24 @@
+{
+  "name": "mobirisetonetlify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve", 
+    "build": "eleventy" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shunwman/mobiriseToNetlify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shunwman/mobiriseToNetlify/issues"
+  },
+  "homepage": "https://github.com/shunwman/mobiriseToNetlify#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
