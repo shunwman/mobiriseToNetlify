@@ -8,7 +8,24 @@
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
-   <!-- <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script> -->
-  <script src="index.js"></script>
+   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script> 
+  <script>
+    var BlogPreview = createClass({
+    render: function() {
+      const { entry, getAsset, widgetsFor } = this.props
+     // const imagePath = entry.getIn(['data', 'image'])
+     // const image = getAsset(imagePath)
+     console.log(entry)
+     console.log(getAsset)
+     console.log(widgetsFor)
+  
+      return h('div', {style: {'background-color': '#22f'}},entry.getIn(['data', 'title'])
+
+      )
+    }
+  })
+  
+  CMS.registerPreviewTemplate('blog', BlogPreview)
+  </script>
 </body>
 </html>
