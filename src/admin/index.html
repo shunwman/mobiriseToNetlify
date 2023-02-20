@@ -43,9 +43,9 @@
     h("div.container", [ 
         h("div.row.justify-content-center", [ 
             h("div.col-12.col-lg-8", [ 
-                h("h1.mbr-section-title.mbr-fonts-style.mb-3.display-1", [ h("strong", entry.getIn(['data', 'title']) ) ]),
+                h("h1.mbr-section-title.mbr-fonts-style.mb-3.display-1", [ h("strong",{}, entry.getIn(['data', 'title']) ) ]),
                 
-                h("p.mbr-text.mbr-fonts-style.display-7", [ h("strong" , entry.getIn(['data', 'description']) ) ]),
+                h("p.mbr-text.mbr-fonts-style.display-7", [ h("strong" ,{}, entry.getIn(['data', 'description']) ) ]),
                 h("div.mbr-section-btn.mt-3", [ h("a.btn.btn-primary.display-4", {
                     "href": "index.html#content4-6"
                 }, [ "Shop Now" ]), h("a.btn.btn-secondary.display-4", {
