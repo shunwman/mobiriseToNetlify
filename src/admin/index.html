@@ -34,7 +34,8 @@
      console.log(getAsset)
      console.log(widgetsFor)
      
-      return h("section", {"class":"menu menu3 cid-sFAA5oUu2Y","data-bs-version":"5.1","once":"menu","id":"menu3-1"}, 
+      return h("section",{}, 
+      h("section", {"class":"menu menu3 cid-sFAA5oUu2Y","data-bs-version":"5.1","once":"menu","id":"menu3-1"}, 
   h("nav", {"class":"navbar navbar-dropdown navbar-expand-lg"}, 
     h("div", {"class":"container"}, h("div", {"class":"navbar-brand"}, h("span", {"class":"navbar-caption-wrap"}, 
             h("a", {"class":"navbar-caption text-primary display-5","href":"https://mobiri.se"}, entry.getIn(['data', 'title']))
@@ -79,7 +80,7 @@
               )
             )
         )))
-);
+),
   h("section", {"class":"header1 cid-sFCAOqBTxa","data-bs-version":"5.1","id":"header1-i"},
   
   h("div", {"class":"mbr-overlay","style":{"opacity":"0.6","background-color":"rgb(237, 245, 225)"}}),
@@ -107,7 +108,7 @@
     )
   )
 
-);
+));
       
       
       
