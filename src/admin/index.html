@@ -34,7 +34,54 @@
      console.log(getAsset)
      console.log(widgetsFor)
      
-      return h("section", {"class":"header1 cid-sFCAOqBTxa","data-bs-version":"5.1","id":"header1-i"},
+      return h("section", {"class":"menu menu3 cid-sFAA5oUu2Y","data-bs-version":"5.1","once":"menu","id":"menu3-1"}, 
+  h("nav", {"class":"navbar navbar-dropdown navbar-expand-lg"}, 
+    h("div", {"class":"container"}, h("div", {"class":"navbar-brand"}, h("span", {"class":"navbar-caption-wrap"}, 
+            h("a", {"class":"navbar-caption text-primary display-5","href":"https://mobiri.se"}, entry.getIn(['data', 'title']))
+          )),
+        h("button", {"class":"navbar-toggler","type":"button","data-toggle":"collapse","data-bs-toggle":"collapse","data-target":"#navbarSupportedContent","data-bs-target":"#navbarSupportedContent","aria-controls":"navbarNavAltMarkup","aria-expanded":"false","aria-label":"Toggle navigation"}, 
+          h("div", {"class":"hamburger"},
+              h("span"),
+              h("span"),
+              h("span"),
+              h("span")
+          )
+        ),
+        h("div", {"class":"collapse navbar-collapse","id":"navbarSupportedContent"},
+            h("ul", {"class":"navbar-nav nav-dropdown","data-app-modern-menu":"true"},
+                h("li", {"class":"nav-item"}, 
+                  h("a", {"class":"nav-link link text-primary display-7","href":"#top"},
+                      "Home", h.trust("&nbsp;")
+                  )
+                ),
+                h("li", {"class":"nav-item"}, 
+                  h("a", {"class":"nav-link link text-primary display-7","href":"index.html#content4-5"},  "Features")
+                ),
+                h("li", {"class":"nav-item"}, 
+                  h("a", {"class":"nav-link link text-primary display-7","href":"index.html#content4-6"},"Shop")
+                ),
+                h("li", {"class":"nav-item"}, 
+                  h("a", {"class":"nav-link link text-primary display-7","href":"index.html#features16-9"}, "About")
+                )
+            ),
+            h("div", {"class":"icons-menu"},
+                h("a", {"class":"iconfont-wrapper","href":"https://mobiri.se","target":"_blank"}, 
+                  h("span", {"class":"p-2 mbr-iconfont socicon-facebook socicon"})
+                ),
+                h("a", {"class":"iconfont-wrapper","href":"https://mobiri.se","target":"_blank"}, 
+                  h("span", {"class":"p-2 mbr-iconfont socicon-twitter socicon"})
+                ),
+                h("a", {"class":"iconfont-wrapper","href":"https://mobiri.se","target":"_blank"}, 
+                  h("span", {"class":"p-2 mbr-iconfont socicon-instagram socicon"})
+                )
+            ),
+            h("div", {"class":"navbar-buttons mbr-section-btn"}, 
+              h("a", {"class":"btn btn-primary display-4","href":"https://mobiri.se"}, " Shop Now"
+              )
+            )
+        )))
+);
+  h("section", {"class":"header1 cid-sFCAOqBTxa","data-bs-version":"5.1","id":"header1-i"},
   
   h("div", {"class":"mbr-overlay","style":{"opacity":"0.6","background-color":"rgb(237, 245, 225)"}}),
   h("div", {"class":"container"}, 
@@ -61,7 +108,7 @@
     )
   )
 
-)
+);
       
       
       
